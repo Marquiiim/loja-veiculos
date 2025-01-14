@@ -2,8 +2,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
+    margin-bottom: 9rem;
     padding: 1.8rem;
-    box-shadow: 5px 5px 5px #e9e9e9a3;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(232, 232, 232, 0.639);
     background-color: #f3fafe;
 
     & .logo {

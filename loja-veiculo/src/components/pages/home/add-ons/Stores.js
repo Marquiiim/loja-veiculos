@@ -30,9 +30,6 @@ function Stores() {
                         <li>
                             <img src={LStore} alt='logo' />
                         </li>
-                        <li>
-                            <img src={LStore} alt='logo' />
-                        </li>
                     </ul>
                 </div>
             </div>
