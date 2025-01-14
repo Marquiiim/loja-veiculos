@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  width: 100%;
+}
+.container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+.container .content span {
+  margin-right: 62rem;
+  color: rgb(137, 137, 137);
+  font-weight: 700;
+  font-size: 19px;
+}
+.container .content .logos_stores ul {
+  display: flex;
+  gap: 0.7rem;
+  list-style: none;
+}
+.container .content .logos_stores ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3fafe;
+  border: 0.5px solid rgba(137, 137, 137, 0.326);
+  padding: 1.6rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.container .content .logos_stores ul li img {
+  height: 6.5rem;
+  width: auto;
+}/*# sourceMappingURL=Stores.module.css.map */

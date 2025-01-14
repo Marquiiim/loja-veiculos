@@ -1,5 +1,7 @@
 import styles from './Home.module.css'
 
+import Stores from './add-ons/Stores'
+
 import CarHome from '../../../img/CarHome.webp'
 
 function Home() {
@@ -31,6 +33,9 @@ function Home() {
                     </li>
                 </ul>
             </div>
+
+            <Stores />
+
         </section>
     )
 }

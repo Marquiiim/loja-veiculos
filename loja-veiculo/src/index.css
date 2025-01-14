@@ -4,3 +4,7 @@
   box-sizing: border-box;
   font-family: "Lexend", serif;
 }
+
+body {
+  background-color: rgb(235, 235, 235);
+}
