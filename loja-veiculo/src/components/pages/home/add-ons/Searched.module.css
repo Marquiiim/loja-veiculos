@@ -47,9 +47,11 @@
 }
 .container .content .searcheds_cars ul li span h3 {
   color: rgb(0, 0, 0);
+  font-weight: 600;
 }
 .container .content .searcheds_cars ul li span span {
   color: #1e6e97;
+  font-weight: 800;
   text-transform: uppercase;
 }
 .container .content .searcheds_cars ul li img {
