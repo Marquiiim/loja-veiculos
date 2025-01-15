@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.container .content .logo_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1.7rem;
+  gap: 0.6rem;
+  width: 100%;
+  background-color: rgb(21, 21, 21);
+}
+.container .content .logo_bottom .logo {
+  font-family: "Lexend", serif;
+  font-weight: 900;
+  text-decoration: none;
+  color: #1e6e97;
+}
+.container .content .logo_bottom .logo_others {
+  display: flex;
+  flex-direction: column;
+}
+.container .content .logo_bottom .logo_others span {
+  color: white;
+  padding: 0px 0px 4px 7px;
+  border-left: 2px solid white;
+  font-weight: 400;
+}
+.container .content .copyright {
+  color: white;
+  text-align: center;
+  background-color: #1e6e97;
+  padding: 1.3rem;
+  font-size: 0.8rem;
+  width: 100%;
+}/*# sourceMappingURL=Footer.module.css.map */

@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        & .logo_bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 1.5rem;
+            padding: 1.7rem;
+            gap: .6rem;
+            width: 100%;
+            background-color: rgb(21, 21, 21);
+
+            & .logo {
+                font-family: "Lexend", serif;
+                font-weight: 900;
+                text-decoration: none;
+                color: #1e6e97;
+            }
+
+            & .logo_others {
+                display: flex;
+                flex-direction: column;
+                
+                & span {
+                    color: white;
+                    padding: 0px 0px 4px 7px;
+                    border-left: 2px solid white;
+                    font-weight: 400;
+                }
+
+            }
+        }
+        
+        & .copyright {
+            color: white;
+            text-align: center;
+            background-color: #1e6e97;
+            padding: 1.3rem;
+            font-size: .8rem;
+            width: 100%;
+        }
+    }
+}

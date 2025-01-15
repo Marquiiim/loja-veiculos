@@ -2,6 +2,9 @@ import styles from './Home.module.css'
 
 import Stores from './add-ons/Stores'
 import Categorys from './add-ons/Categorys'
+import Searched from './add-ons/Searched'
+
+import Footer from '../../layout/Footer'
 
 import CarHome from '../../../img/CarHome.webp'
 
@@ -36,8 +39,10 @@ function Home() {
             </div>
 
             <Stores />
-            
             <Categorys />
+            <Searched />
+
+            <Footer />
 
         </section>
     )

@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        & span {
+            margin-right: 58.5rem;
+            color: rgb(137, 137, 137);
+            font-weight: 700;
+            font-size: 19px;
+        }
+
+        & .searcheds_cars {
+
+            & ul {
+                display: flex;
+                gap: 1rem;
+
+                & li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    background-color: white;
+                    list-style: none;
+                    overflow: hidden;
+                    cursor: pointer;
+                    position: relative;
+                    border-radius: 1rem;
+                    width: 10rem;
+                    height: 14rem;
+                    padding-top: 1rem;
+
+
+                    & span {
+                        margin-right: 0px;
+                        margin-right: 0.5rem;
+                        z-index: 1;
+                        font-size: 1.1rem;
+                        position: relative;
+                        text-align: start;
+
+
+                        & h3 {
+                            color: rgb(0, 0, 0);
+                        }
+
+                        & span {
+                            color: #1e6e97;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    & img {
+                        height: 150px;
+                        width: auto;
+                        transform: scaleX(-1);
+                        position: relative;
+                        top: -10px;
+                        left: -38px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
