@@ -9,9 +9,9 @@ import Footer from '../../layout/Footer'
 import CarHome from '../../../img/CarHome.webp'
 
 function Home() {
-
     return (
         <section className={styles.container}>
+
             <div className={styles.content}>
                 <ul>
                     <li>

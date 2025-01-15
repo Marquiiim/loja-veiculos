@@ -6,7 +6,7 @@ import { VscAccount } from "react-icons/vsc";
 import { VscHeart } from "react-icons/vsc";
 import { VscReport } from "react-icons/vsc";
 
-function Navbar() {
+function Navbar({ onShowModal }) {
 
     return (
         <nav>
