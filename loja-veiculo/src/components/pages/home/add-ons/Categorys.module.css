@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
   width: 100%;
 }
 .container .content {
@@ -30,7 +30,7 @@
 }
 .container .content .cat_cars ul li {
   width: 250px;
-  height: 170px;
+  height: 210px;
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;
@@ -51,7 +51,5 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
   position: absolute;
 }/*# sourceMappingURL=Categorys.module.css.map */
