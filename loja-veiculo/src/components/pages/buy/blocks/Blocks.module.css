@@ -1,0 +1,47 @@
+.container {
+  background-color: #f3fafe;
+  padding: 15px 20px 15px 20px;
+  border-radius: 1rem;
+}
+.container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.4rem;
+}
+.container .content img {
+  width: auto;
+  height: 125px;
+  border-radius: 0.4rem;
+  margin-bottom: 1.3rem;
+  cursor: zoom-in;
+}
+.container .content span {
+  font-weight: bold;
+}
+.container .content p span {
+  color: rgba(0, 255, 0, 0.621);
+  font-weight: bold;
+}
+.container .content button {
+  background-color: rgba(0, 255, 0, 0.621);
+  color: white;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  margin-top: 2.5rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.container .content button:hover {
+  transform: scale(1.1);
+}
+.container .content .informations {
+  color: gray;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}/*# sourceMappingURL=Blocks.module.css.map */

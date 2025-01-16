@@ -4,8 +4,6 @@ import Stores from './add-ons/Stores'
 import Categorys from './add-ons/Categorys'
 import Searched from './add-ons/Searched'
 
-import Footer from '../../layout/Footer'
-
 import CarHome from '../../../img/CarHome.webp'
 
 function Home() {
@@ -41,8 +39,6 @@ function Home() {
             <Stores />
             <Categorys />
             <Searched />
-
-            <Footer />
 
         </section>
     )

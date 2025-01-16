@@ -1,9 +1,31 @@
 .container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: start;
+    margin-left: 2.8rem;
+    height: 100vh;
 
     .content {
 
+        & ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: .3rem;
+            background-color: white;
+            padding: 20px 30px 20px 30px;
+            border-radius: .6rem;
+
+            & .title_search {
+                color: rgb(137, 137, 137);
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            & input {
+                border: 1px solid rgba(137, 137, 137, 0.326);
+                border-radius: 1rem;
+                padding: .4rem;
+                margin-bottom: 1rem;
+            }
+        }
     }
 }

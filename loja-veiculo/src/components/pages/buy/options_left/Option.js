@@ -4,7 +4,9 @@ function Option({ name = 'Unknown' }) {
 
     return (
         <li className={styles.option}>
-            <input type='checkbox' /> <label>{name}</label>
+            <label>
+                    {name}
+            </label>
         </li>
     )
 }

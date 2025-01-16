@@ -1,5 +1,17 @@
 .option {
   display: flex;
-  gap: 0.7rem;
   list-style: none;
+  text-align: center;
+  width: 100%;
+}
+.option label {
+  background-color: #f3fafe;
+  width: 100%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+.option label:hover {
+  color: #1e6e97;
+  font-weight: bold;
 }/*# sourceMappingURL=Option.module.css.map */

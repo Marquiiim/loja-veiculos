@@ -1,13 +1,19 @@
 .option {
     display: flex;
-    gap: .7rem;
     list-style: none;
-
-    & input {
-
-    }
+    text-align: center;
+    width: 100%;
 
     & label {
-    
+        background-color: #f3fafe;
+        width: 100%;
+        border-radius: .5rem;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+
+        &:hover {
+            color: #1e6e97;
+            font-weight: bold;
+        }
     }
 }

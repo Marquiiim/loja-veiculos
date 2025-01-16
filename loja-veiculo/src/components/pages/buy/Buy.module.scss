@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
     .content {
@@ -12,21 +12,21 @@
         height: 100%;
         width: 100%;
 
-            & h1 {
-                color: rgb(137, 137, 137);
-                font-weight: 700;
-                font-size: 1.5rem;
-            }
+        & h1 {
+            color: rgb(137, 137, 137);
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
 
         & .buy_options {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 3rem;
+            gap: .7rem;
+            margin-top: 1.5rem;
             width: 100%;
-            
+
             & .options_left {
-                margin-left: 3rem;
                 width: 20%;
             }
 
@@ -35,6 +35,18 @@
                 justify-content: center;
                 align-items: center;
                 width: 80%;
+                height: 100%;
+                gap: .3rem;
+                background-color: #ffffff;
+                padding: 20px 50px 20px 50px;
+                border-radius: .6rem;
+                margin-right: 3rem;
+
+                & ul {
+                    display: grid;
+                    gap: 1rem;
+                    grid-template-columns: repeat(4, 1fr);
+                }
             }
         }
     }

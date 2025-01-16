@@ -1,0 +1,57 @@
+.container {
+    background-color: #f3fafe;
+    padding: 15px 20px 15px 20px;
+    border-radius: 1rem;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: .4rem;
+
+        & img {
+            width: auto;
+            height: 125px;
+            border-radius: .4rem;
+            margin-bottom: 1.3rem;
+            cursor: zoom-in;
+        }
+
+        & span {
+            font-weight: bold;
+        }
+
+        & p {
+
+            & span {
+                color: rgba(0, 255, 0, 0.621);
+                font-weight: bold;
+            }
+        }
+
+        & button {
+            background-color: rgba(0, 255, 0, 0.621);
+            color: white;
+            width: 100%;
+            padding: .5rem;
+            border-radius: .6rem;
+            margin-top: 2.5rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        & .informations {
+            color: gray;
+            font-size: 12px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+}

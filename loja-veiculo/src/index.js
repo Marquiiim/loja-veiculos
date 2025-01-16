@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Navbar from "./components/layout/Navbar";
+import Footer from './components/layout/Footer'
 
 import Home from './components/pages/home/Home'
 import Buy from './components/pages/buy/Buy'
@@ -20,6 +22,7 @@ root.render(
         <Route path='/services' element={<Home />} />
         <Route path='/help' element={<Home />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );

@@ -7,7 +7,9 @@
         "Categorys",
         "Conversívels",
         "Conversíves",
+        "Crossover",
         "desactive",
+        "Hatch",
         "Hatches",
         "Heart",
         "Lexend",
@@ -18,6 +20,8 @@
         "Sedans",
         "sell",
         "Sell",
+        "Station",
+        "Wagon",
         "Walking"
     ]
 }

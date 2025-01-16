@@ -1,6 +1,7 @@
 import styles from './Buy.module.css'
 
 import OptionsLeft from './options_left/OptionsLeft'
+import Blocks from './blocks/Blocks'
 
 function Buy() {
 
@@ -16,7 +17,18 @@ function Buy() {
                     </div>
                     <div className={styles.cars}>
                         <ul>
-                            <li>teste</li>
+                            <Blocks />
+                            <Blocks />
+                            <Blocks />
+                            <Blocks />
+                            <Blocks />
+                            <Blocks />
+                            <Blocks />
+                            <Blocks />
+                            <Blocks />
+                            <Blocks />
+                            <Blocks />
+                            <Blocks />
                         </ul>
                     </div>
                 </div>
