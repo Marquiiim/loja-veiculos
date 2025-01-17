@@ -2,8 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
 }
 .container .content {
   display: flex;
@@ -12,35 +10,58 @@
   height: 100%;
   width: 100%;
 }
-.container .content h1 {
-  color: rgb(137, 137, 137);
-  font-weight: 700;
-  font-size: 1.8rem;
-}
-.container .content .buy_options {
+.container .content .search {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.7rem;
-  margin-top: 1.5rem;
+  flex-direction: column;
+  width: 99%;
+  height: 100%;
+  gap: 0.3rem;
+  background-color: #ffffff;
+  background-color: #ffffff;
+  padding: 20px 50px 20px 50px;
+  border-radius: 0.6rem;
+}
+.container .content .search span {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.container .content .search .search_options {
+  display: flex;
+  width: 30%;
+}
+.container .content .search .search_options input {
+  padding: 0.5rem;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid rgb(137, 137, 137);
   width: 100%;
+  outline: none;
 }
-.container .content .buy_options .options_left {
-  width: 20%;
+.container .content .search .search_options .search_icon {
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+  background-color: #1e6e97;
 }
-.container .content .buy_options .cars {
+.container .content .cars {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  flex-direction: column;
+  width: 99%;
   height: 100%;
   gap: 0.3rem;
   background-color: #ffffff;
   padding: 20px 50px 20px 50px;
   border-radius: 0.6rem;
-  margin-right: 3rem;
+  margin-top: 1rem;
 }
-.container .content .buy_options .cars ul {
+.container .content .cars .title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.container .content .cars ul {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr);

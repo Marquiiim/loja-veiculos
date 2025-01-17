@@ -3,6 +3,8 @@ import styles from './Blocks.module.css'
 import Volvo from '../../../../img/VolvoBuyRoute.jpg'
 
 import { SlArrowDown } from "react-icons/sl";
+import { IoIosCalendar } from "react-icons/io";
+import { IoIosSpeedometer } from "react-icons/io";
 
 function Blocks() {
 
@@ -10,20 +12,28 @@ function Blocks() {
         <div className={styles.container}>
             <div className={styles.content}>
                 <img src={Volvo} alt='Carro' />
-                <span>
-                    Volvo XC40
-                </span>
+                <h3 className={styles.title}>
+                    Volvo <span>XC40</span>
+                </h3>
                 <p>
-                    a partir de <span>R$ 209.900</span>
+                    2.0 turbo de 190 ou 252 cv e transmissão automática
                 </p>
-                    <button>
-                        Comprar
-                    </button>
-                    <span className={styles.informations}>
-                        Mais informações <SlArrowDown size='10'/>
+                <div className={styles.info_primary}>
+                    <span>
+                        <IoIosCalendar /> <span>2024/2025</span>
+                    </span>
+                    <span>
+                        <IoIosSpeedometer /> <span>0 km</span>
                     </span>
                 </div>
+                <button>
+                    Comprar
+                </button>
+                <span className={styles.info_secondary}>
+                    Mais informações <SlArrowDown size='10' />
+                </span>
             </div>
+        </div>
     )
 }
 

@@ -2,8 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
 
     .content {
         display: flex;
@@ -12,43 +10,68 @@
         height: 100%;
         width: 100%;
 
-        & h1 {
-            color: rgb(137, 137, 137);
-            font-weight: 700;
-            font-size: 1.8rem;
-        }
-
-        & .buy_options {
+        & .search {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: .7rem;
-            margin-top: 1.5rem;
-            width: 100%;
+            flex-direction: column;
+            width: 99%;
+            height: 100%;
+            gap: .3rem;
+            background-color: #ffffff;
+            background-color: #ffffff;
+            padding: 20px 50px 20px 50px;
+            border-radius: .6rem;
 
-            & .options_left {
-                width: 20%;
+            & span {
+                font-size: 1.6rem;
+                font-weight: bold;
             }
 
-            & .cars {
+            & .search_options {
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 80%;
-                height: 100%;
-                gap: .3rem;
-                background-color: #ffffff;
-                padding: 20px 50px 20px 50px;
-                border-radius: .6rem;
-                margin-right: 3rem;
+                width: 30%;
 
-                & ul {
-                    display: grid;
-                    gap: 1rem;
-                    grid-template-columns: repeat(4, 1fr);
+                & input {
+                    padding: .5rem;
+                    border-radius: 5px 0px 0px 5px;
+                    border: 1px solid rgb(137, 137, 137);
+                    width: 100%;
+                    outline: none;
+                }
+
+                & .search_icon {
+                    border-radius: 0px 5px 5px 0px;
+                    color: white;
+                    background-color: #1e6e97;
                 }
             }
         }
-    }
 
+        & .cars {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 99%;
+            height: 100%;
+            gap: .3rem;
+            background-color: #ffffff;
+            padding: 20px 50px 20px 50px;
+            border-radius: .6rem;
+            margin-top: 1rem;
+
+            & .title {
+                font-size: 2.5rem;
+                font-weight: 300;
+                margin-bottom: 1rem;
+            }
+
+            & ul {
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
 }
