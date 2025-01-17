@@ -18,6 +18,7 @@
   border-radius: 10px 10px 0px 0px;
 }
 .container .content .title {
+  font-size: 1.6rem;
   font-weight: 400;
 }
 .container .content .title span {
