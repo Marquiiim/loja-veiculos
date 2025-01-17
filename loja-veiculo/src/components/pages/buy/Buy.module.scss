@@ -17,7 +17,7 @@
             flex-direction: column;
             width: 99%;
             height: 100%;
-            gap: .3rem;
+            gap: .8rem;
             background-color: #ffffff;
             background-color: #ffffff;
             padding: 20px 50px 20px 50px;
@@ -33,7 +33,7 @@
                 width: 30%;
 
                 & input {
-                    padding: .5rem;
+                    padding: .7rem;
                     border-radius: 5px 0px 0px 5px;
                     border: 1px solid rgb(137, 137, 137);
                     width: 100%;
@@ -44,6 +44,7 @@
                     border-radius: 0px 5px 5px 0px;
                     color: white;
                     background-color: #1e6e97;
+                    cursor: pointer;
                 }
             }
         }

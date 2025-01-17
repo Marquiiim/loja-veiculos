@@ -15,7 +15,7 @@ function Buy() {
                     </span>
                     <div className={styles.search_options}>
                     <input type='text' placeholder='Marca ou modelo' />
-                    <IoIosSearch size='35' className={styles.search_icon} />
+                    <IoIosSearch size='41' className={styles.search_icon} />
                     </div>
                 </div>
                 <div className={styles.cars}>
