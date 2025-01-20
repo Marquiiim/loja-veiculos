@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+    .content {
+        display: flex;
+
+        & .left_sell {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 600px;
+
+            & h1 {
+                font-size: 3rem;
+                font-weight: 900;
+
+                & span {
+                    color: #1e6e97;
+                }
+            }
+
+            & p {
+                color: rgba(46, 46, 46, 0.695);
+            }
+
+            & button {
+                background-color: #1e6e97;
+                color: white;
+                border: none;
+                cursor: pointer;
+                padding: .8rem;
+                border-radius: .5rem;
+                width: 50%;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+
+                &:active {
+                    opacity: 0.8;
+                }
+            }
+
+            & div {
+                display: flex;
+                gap: .4rem;
+
+                & .checkbox {
+                    border-radius: 3px;
+                    border: 1px solid rgba(46, 46, 46, 0.695);
+                    width: 15px;
+                    height: 15px;
+                    margin-top: .2rem;
+                    cursor: pointer;
+                    transition: background-color 0.2s ease-in-out;
+                    }
+
+                    .checked {
+                        background-color: #1e6e97;
+                    }
+                }
+
+                & span {
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+
+        & .right_sell {}
+    }

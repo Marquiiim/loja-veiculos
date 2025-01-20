@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.container .content {
+  display: flex;
+}
+.container .content .left_sell {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+}
+.container .content .left_sell h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.container .content .left_sell h1 span {
+  color: #1e6e97;
+}
+.container .content .left_sell p {
+  color: rgba(46, 46, 46, 0.695);
+}
+.container .content .left_sell button {
+  background-color: #1e6e97;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  width: 50%;
+}
+.container .content .left_sell button:hover {
+  opacity: 0.9;
+}
+.container .content .left_sell button:active {
+  opacity: 0.8;
+}
+.container .content .left_sell div {
+  display: flex;
+  gap: 0.4rem;
+}
+.container .content .left_sell div .checkbox {
+  border-radius: 3px;
+  border: 1px solid rgba(46, 46, 46, 0.695);
+  width: 15px;
+  height: 15px;
+  margin-top: 0.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.container .content .left_sell div .checked {
+  background-color: #1e6e97;
+}
+.container .content .left_sell span {
+  color: rgb(0, 0, 0);
+}/*# sourceMappingURL=Sell.module.css.map */
