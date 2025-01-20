@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  background-color: white;
+}
+.container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.container .content ul {
+  display: flex;
+  gap: 2.5rem;
+}
+.container .content ul li {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f3fafe;
+  border-radius: 0.4rem;
+  padding: 2rem;
+  gap: 1rem;
+  max-width: 270px;
+}
+.container .content ul li h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.container .content ul li span {
+  font-size: 14.5px;
+  color: rgba(46, 46, 46, 0.695);
+}
+.container .content button {
+  background-color: #1e6e97;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  width: 50%;
+}
+.container .content button:hover {
+  opacity: 0.9;
+}
+.container .content button:active {
+  opacity: 0.8;
+}/*# sourceMappingURL=Reasons.module.css.map */

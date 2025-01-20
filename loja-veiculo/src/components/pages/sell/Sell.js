@@ -1,5 +1,7 @@
 import styles from './Sell.module.css'
 
+import Reasons from './add-ons/Reasons'
+
 import SellCar from '../../../img/CarSellRoute.png'
 
 import { useState } from 'react'
@@ -23,10 +25,12 @@ function Sell() {
                         <div onClick={check} className={`${styles.checkbox} ${isChecked ? styles.checked : ''}`}></div><span>Quero receber descontos, ofertas e informações.</span>
                     </div>
                 </div>
+                <div className={styles.right_sell}>
+                    <img src={SellCar} alt="Venda seu carro" />
+                </div>
             </div>
-            <div className={styles.right_sell}>
-                <img src={SellCar} alt="Venda seu carro" />
-            </div>
+
+            <Reasons />
         </section>
     )
 }
