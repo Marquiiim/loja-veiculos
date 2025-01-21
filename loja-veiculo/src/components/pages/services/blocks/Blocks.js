@@ -49,6 +49,7 @@ function Blocks({ name, price }) {
                             </span>
                         </li>
                     </ul>
+                    <button>Agendar</button>
                 </div>
             </div>
         </div>

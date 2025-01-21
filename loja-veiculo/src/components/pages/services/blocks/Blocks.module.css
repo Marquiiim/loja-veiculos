@@ -39,6 +39,10 @@
   font-size: 0.7rem;
 }
 .container .content .list_services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   max-width: 270px;
 }
 .container .content .list_services ul {
@@ -53,4 +57,20 @@
 }
 .container .content .list_services ul li span {
   font-size: 0.9rem;
+}
+.container .content .list_services button {
+  background-color: #1e6e97;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  width: 50%;
+  margin-top: 1.3rem;
+}
+.container .content .list_services button:hover {
+  opacity: 0.9;
+}
+.container .content .list_services button:active {
+  opacity: 0.8;
 }/*# sourceMappingURL=Blocks.module.css.map */
