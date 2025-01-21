@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & .content {
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+
+        & ul {
+            display: flex;
+            gap: 3rem;
+
+            & li {
+                cursor: pointer;
+                list-style: none;
+                padding: 1rem;
+                border: 1px solid #1e6e97;
+                color: #1e6e97;
+                border-radius: .5rem;
+                transition: transform 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    & .display {
+        margin-top: 3rem;
+    }
+}

@@ -1,0 +1,56 @@
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.container .content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.container .content span {
+  display: flex;
+  color: green;
+}
+.container .content .prices {
+  display: flex;
+  gap: 0.8rem;
+}
+.container .content .prices .addon1 {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  background-color: green;
+  color: white;
+}
+.container .content .prices .addon2 {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  background-color: #1e6e97;
+  color: white;
+}
+.container .content p {
+  color: rgba(46, 46, 46, 0.695);
+  font-size: 0.7rem;
+}
+.container .content .list_services {
+  max-width: 270px;
+}
+.container .content .list_services ul {
+  display: flex;
+  gap: 1rem;
+}
+.container .content .list_services ul li {
+  list-style: none;
+}
+.container .content .list_services ul li h3 {
+  font-size: 0.9rem;
+}
+.container .content .list_services ul li span {
+  font-size: 0.9rem;
+}/*# sourceMappingURL=Blocks.module.css.map */

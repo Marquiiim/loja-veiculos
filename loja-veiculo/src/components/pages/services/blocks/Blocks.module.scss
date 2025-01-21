@@ -1,0 +1,68 @@
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: .7rem;
+
+        & h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        & span {
+            display: flex;
+            color: green;
+        }
+
+        & .prices {
+            display: flex;
+            gap: .8rem;
+
+            & .addon1 {
+                border-radius: 1rem;
+                padding: .5rem;
+                font-size: .8rem;
+                background-color: green;
+                color: white;
+            }
+
+            & .addon2 {
+                border-radius: 1rem;
+                padding: .5rem;
+                font-size: .8rem;
+                background-color: #1e6e97;
+                color: white;
+            }
+        }
+
+        & p {
+            color: rgba(46, 46, 46, 0.695);
+            font-size: .7rem;
+        }
+
+        & .list_services {
+            max-width: 270px;
+
+            & ul {
+                display: flex;
+                gap: 1rem;
+
+                & li {
+                    list-style: none;
+
+                    & h3 {
+                        font-size: .9rem;
+                    }
+
+                    & span {
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+}

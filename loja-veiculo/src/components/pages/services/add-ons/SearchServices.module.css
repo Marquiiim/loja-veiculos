@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .content {
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.container .content ul {
+  display: flex;
+  gap: 3rem;
+}
+.container .content ul li {
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem;
+  border: 1px solid #1e6e97;
+  color: #1e6e97;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.container .content ul li:hover {
+  transform: scale(1.1);
+}
+.container .display {
+  margin-top: 3rem;
+}/*# sourceMappingURL=SearchServices.module.css.map */
