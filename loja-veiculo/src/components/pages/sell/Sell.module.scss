@@ -58,18 +58,16 @@
                     margin-top: .2rem;
                     cursor: pointer;
                     transition: background-color 0.2s ease-in-out;
-                    }
-
-                    .checked {
-                        background-color: #1e6e97;
-                    }
                 }
 
-                & span {
-                    color: rgb(0, 0, 0);
+                .checked {
+                    background-color: #1e6e97;
                 }
             }
-        }
 
-        & .right_sell {}
+            & span {
+                color: rgb(0, 0, 0);
+            }
+        }
     }
+}
