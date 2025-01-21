@@ -1,5 +1,8 @@
 import styles from './Blocks.module.css'
 
+import { HiMiniCurrencyDollar } from "react-icons/hi2";
+import { HiMiniCalendarDays } from "react-icons/hi2";
+
 function Blocks({ name, price }) {
 
     return (
@@ -13,9 +16,11 @@ function Blocks({ name, price }) {
                 </span>
                 <div className={styles.prices}>
                     <span className={styles.addon1}>
+                    <HiMiniCurrencyDollar size='16' />
                         Preço imbatível
                     </span>
                     <span className={styles.addon2}>
+                        <HiMiniCalendarDays size='15'/>
                         Mais agendados
                     </span>
                 </div>

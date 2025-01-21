@@ -11,7 +11,7 @@ function SearchServices() {
     const options = {
         item1: <Blocks name='Lavagem completa' price='199'/>,
         item2: <Blocks name='Funilaria completa' price='419'/>,
-        item3: <Blocks name='Estética automotiva completa' price='259'/>,
+        item3: <Blocks name='Estética automotiva' price='259'/>,
         item4: <Blocks name='Manutenção geral' price='59'/>
     }
 
