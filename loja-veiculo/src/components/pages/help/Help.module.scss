@@ -6,14 +6,108 @@
 
     & .content {
         display: flex;
-        justify-content: center;
         align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        width: 100%;
+        height: 100%;
+
+        & .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-image: url('../../../img/BannerHelp.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: -24px;
+            width: 100%;
+            height: 30vh;
+
+            & .banner_left {
+                display: flex;
+                flex-direction: column;
+                gap: .7rem;
+                width: 50%;
+                text-align: center;
+
+                & p {
+                    color: white
+                }
+
+                & h1 {
+                    color: white;
+
+
+                    & span {
+                        font-weight: 800;
+                        color: #1e6e97;
+                    }
+                }
+            }
+
+            & .banner_right {
+                width: 50%;
+                pointer-events: none;
+
+                img {
+                    position: relative;
+                    top: 70px;
+                    width: 100%;
+                    height: 450px;
+                    filter: hue-rotate(160deg)
+                }
+            }
+
+        }
+
 
         & input {
+            position: relative;
+            top: -85px;
+            box-shadow: 3px 3px 3px 3px rgba(97, 97, 97, 0.336);
             border: none;
             padding: 1.4rem;
             border-radius: .6rem;
-            width: 100%;
+            width: 50%;
+        }
+
+        & .doubts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2.5rem;
+
+            & h3 {
+                font-size: 2.5rem;
+                color: rgba(77, 77, 77, 0.708);
+            }
+
+            & ol {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                grid-template-columns: repeat(2, 1fr);
+                gap: .8rem;
+
+                & li {
+                    color: rgba(49, 49, 49, 0.708);
+                    margin-left: 2rem;
+
+                    & a {
+                        color: rgba(77, 77, 77, 0.708);
+                        margin-left: .6rem;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #1e6e97;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
         }
     }
 }
