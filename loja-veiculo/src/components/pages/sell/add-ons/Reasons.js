@@ -38,7 +38,6 @@ function Reasons() {
                         </span>
                     </li>
                 </ul>
-                <button>Vender meu carro</button>
             </div>
         </section>
     )

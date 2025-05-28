@@ -8,79 +8,62 @@ function Searched() {
     return (
         <section className={styles.container}>
             <div className={styles.content}>
-                <span>
-                    Carros mais buscados
-                </span>
-                <div className={styles.searcheds_cars}>
+                <fieldset className={styles.field}>
+                    <legend className={styles.title}>
+                        Categorias
+                    </legend>
                     <ul>
                         <li>
                             <span>
                                 <h3>
-                                    Toyota
+                                    Hatch
                                 </h3>
-                                <span>Hilux</span>
                             </span>
-                            <img src={Caright} />
+                            <img src={Caright} alt='' />
                         </li>
                         <li>
                             <span>
                                 <h3>
-                                    Fiat
+                                    SUV
                                 </h3>
-                                <span>
-                                    Palio
-                                </span>
                             </span>
-                            <img src={Caright} />
+                            <img src={Caright} alt='' />
                         </li>
                         <li>
                             <span>
                                 <h3>
-                                    Toyota
+                                    Sedan
                                 </h3>
-                                <span>
-                                    Corolla
-                                </span>
                             </span>
-                            <img src={Caright} />
+                            <img src={Caright} alt='' />
                         </li>
                         <li>
                             <span>
                                 <h3>
-                                    Volkswagen
+                                    Minivan
                                 </h3>
-                                <span>
-                                    Gol
-                                </span>
                             </span>
-                            <img src={Caright} />
+                            <img src={Caright} alt='' />
                         </li>
                         <li>
                             <span>
                                 <h3>
-                                    Fiat
+                                    Picape
                                 </h3>
-                                <span>
-                                    Palio
-                                </span>
                             </span>
-                            <img src={Caright} />
+                            <img src={Caright} alt='' />
                         </li>
                         <li>
                             <span>
                                 <h3>
-                                    Honda
+                                    Esportivo
                                 </h3>
-                                <span>
-                                    Civic
-                                </span>
                             </span>
-                            <img src={Caright} />
+                            <img src={Caright} alt='' />
                         </li>
                     </ul>
-                </div>
+                </fieldset>
             </div>
-
         </section>
     )
 }

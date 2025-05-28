@@ -1,45 +1,16 @@
 import styles from './Home.module.css'
 
-import Stores from './add-ons/Stores'
-import Categorys from './add-ons/Categorys'
-import Searched from './add-ons/Searched'
+import FrenteLoja from '../../../img/FrenteLoja.png'
 
-import CarHome from '../../../img/CarHome.webp'
+import Searched from './add-ons/Searched'
 
 function Home() {
     return (
         <section className={styles.container}>
-
             <div className={styles.content}>
-                <ul>
-                    <li>
-                        <img src={CarHome} />
-                    </li>
-
-                    <li>
-                        <img src={CarHome} />
-                    </li>
-
-                    <li>
-                        <img src={CarHome} />
-                    </li>
-
-                    <li>
-                        <img src={CarHome} />
-                    </li>
-                    <li>
-                        <img src={CarHome} />
-                    </li>
-                    <li>
-                        <img src={CarHome} />
-                    </li>
-                </ul>
+                <div className={styles.banner}></div>
+                <Searched />
             </div>
-
-            <Stores />
-            <Categorys />
-            <Searched />
-
         </section>
     )
 }

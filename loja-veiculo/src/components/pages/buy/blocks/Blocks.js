@@ -1,7 +1,5 @@
 import styles from './Blocks.module.css'
 
-import Volvo from '../../../../img/VolvoBuyRoute.jpg'
-
 import { SlArrowDown } from "react-icons/sl";
 import { IoIosCalendar } from "react-icons/io";
 import { IoIosSpeedometer } from "react-icons/io";
@@ -11,7 +9,7 @@ function Blocks() {
     return (
         <div className={styles.container}>
             <div className={styles.content}>
-                <img src={Volvo} alt='Carro' />
+                <img src='sem nome' alt='' />
                 <h3 className={styles.title}>
                     Volvo <span>XC40</span>
                 </h3>

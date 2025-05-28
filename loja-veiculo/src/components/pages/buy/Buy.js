@@ -24,17 +24,7 @@ function Buy() {
                 </div>
                     <ul>
                         <Blocks />
-                        <Blocks />
-                        <Blocks />
-                        <Blocks />
-                        <Blocks />
-                        <Blocks />
-                        <Blocks />
-                        <Blocks />
-                        <Blocks />
-                        <Blocks />
-                        <Blocks />
-                        <Blocks />
+
                     </ul>
                 </div>
             </div>
