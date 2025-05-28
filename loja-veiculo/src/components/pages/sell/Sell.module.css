@@ -25,8 +25,11 @@
 .container .content .left_sell p {
   color: rgba(46, 46, 46, 0.695);
 }
-.container .content .left_sell button {
+.container .content .left_sell a {
   background-color: #1e6e97;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
   color: white;
   border: none;
   cursor: pointer;
@@ -34,10 +37,10 @@
   border-radius: 0.5rem;
   width: 50%;
 }
-.container .content .left_sell button:hover {
+.container .content .left_sell a:hover {
   opacity: 0.9;
 }
-.container .content .left_sell button:active {
+.container .content .left_sell a:active {
   opacity: 0.8;
 }
 .container .content .left_sell div {
@@ -47,8 +50,8 @@
 .container .content .left_sell div .checkbox {
   border-radius: 3px;
   border: 1px solid rgba(46, 46, 46, 0.695);
-  width: 15px;
-  height: 15px;
+  width: 0.9375rem;
+  height: 0.9375rem;
   margin-top: 0.2rem;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;

@@ -1,7 +1,5 @@
 import styles from './Home.module.css'
 
-import FrenteLoja from '../../../img/FrenteLoja.png'
-
 import Searched from './add-ons/Searched'
 
 function Home() {

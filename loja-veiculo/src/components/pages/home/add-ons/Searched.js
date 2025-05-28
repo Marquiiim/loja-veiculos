@@ -19,7 +19,7 @@ function Searched() {
                                     Hatch
                                 </h3>
                             </span>
-                            <img src={Caright} alt='' />
+                            <img src={Caright} alt='Categoria Hatch' />
                         </li>
                         <li>
                             <span>
@@ -27,7 +27,7 @@ function Searched() {
                                     SUV
                                 </h3>
                             </span>
-                            <img src={Caright} alt='' />
+                            <img src={Caright} alt='Categoria SUV' />
                         </li>
                         <li>
                             <span>
@@ -35,7 +35,7 @@ function Searched() {
                                     Sedan
                                 </h3>
                             </span>
-                            <img src={Caright} alt='' />
+                            <img src={Caright} alt='Categoria Sedan' />
                         </li>
                         <li>
                             <span>
@@ -43,7 +43,7 @@ function Searched() {
                                     Minivan
                                 </h3>
                             </span>
-                            <img src={Caright} alt='' />
+                            <img src={Caright} alt='Categoria Minivan' />
                         </li>
                         <li>
                             <span>
@@ -51,7 +51,7 @@ function Searched() {
                                     Picape
                                 </h3>
                             </span>
-                            <img src={Caright} alt='' />
+                            <img src={Caright} alt='Categoria Picape' />
                         </li>
                         <li>
                             <span>
@@ -59,7 +59,7 @@ function Searched() {
                                     Esportivo
                                 </h3>
                             </span>
-                            <img src={Caright} alt='' />
+                            <img src={Caright} alt='Categoria Esportivo' />
                         </li>
                     </ul>
                 </fieldset>
