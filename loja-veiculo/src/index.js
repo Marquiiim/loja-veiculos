@@ -9,7 +9,7 @@ import Footer from './components/layout/Footer'
 import Home from './components/pages/home/Home'
 import Buy from './components/pages/buy/Buy'
 import Sell from './components/pages/sell/Sell';
-import Services from './components/pages/services/Services';
+import Services from './components/pages/aesthetics/Services.js';
 import Help from './components/pages/help/Help'
 import Anunciar from './components/form/Anunciar.js'
 
