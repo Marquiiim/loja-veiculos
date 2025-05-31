@@ -7,12 +7,12 @@ nav {
     box-shadow: 5px 5px 5px rgba(232, 232, 232, 0.639);
     background-color: #f3fafe;
 
-    & .logo {
+    .logo {
         margin-left: 1rem;
 
-        & h1 {
+        h1 {
 
-            & a {
+            a {
                 font-family: "Lexend", serif;
                 font-weight: 900;
                 text-decoration: none;
@@ -21,16 +21,16 @@ nav {
         }
     }
 
-    & .options_website {
+    .options_website {
 
-        & ul {
+        ul {
             display: flex;
             gap: 1.6rem;
 
-            & li {
+            li {
                 list-style: none;
 
-                & a {
+                a {
                     color: #000000;
                     text-decoration: none;
                     padding: 10px 10px 28.5px 10px;
@@ -48,7 +48,7 @@ nav {
 
     }
 
-    & .options_right {
+    .options_right {
         display: flex;
         gap: .9rem;
         height: 100%;
@@ -57,11 +57,11 @@ nav {
         padding: 15px 0px 15px 20px;
         border-left: 2px solid rgba(137, 137, 137, 0.326);
 
-        & span {
+        span {
             cursor: pointer;
         }
 
-        & a {
+        a {
             cursor: pointer;
         }
     }

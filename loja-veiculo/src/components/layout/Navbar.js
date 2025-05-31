@@ -47,10 +47,10 @@ function Navbar({ onShowModal }) {
                 <span>
                     <VscAccount /> Entrar
                 </span>
-                <a>
+                <a href=''>
                     <VscHeart size='20' />
                 </a>
-                <a>
+                <a href=''>
                     <VscReport size='20' />
                 </a>
             </div>

@@ -15,7 +15,7 @@ function Help() {
                         </p>
                     </div>
                     <div className={styles.banner_right}>
-                        <img src={FAQ} />
+                        <img src={FAQ} alt='FAQ AJUDA'/>
                     </div>
                 </div>
                 <input type="text" placeholder="Digite sua dúvida"></input>
@@ -26,52 +26,52 @@ function Help() {
                     </h3>
                     <ol>
                         <li>
-                            <a>
+                            <a href=''>
                                 Quais dados consigo alterar no meu cadastro?
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href=''>
                                 Onde faço essas alterações?
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href=''>
                                 Cancelamento de cadastro
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href=''>
                                 Quais dados cadastrai NÃO posso alterar?
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href=''>
                                 Quais palavras ou caracteres não podem ser inseridos no campo de observação?
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href=''>
                                 Porque o campo de observação do meu anúncio não aparece?
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href=''>
                                 O que é Comparador?
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href=''>
                                 O que é Cardelivery?
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href=''>
                                 Quem vai levar o Carro até minha casa?
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href=''>
                                 Termos de Uso e Política de Privacidade
                             </a>
                         </li>
