@@ -37,16 +37,23 @@
   margin-top: 0;
 }
 .content .form .form_info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 1.5rem;
   position: relative;
 }
 .content .form .form_info label {
-  display: block;
-  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
   font-size: 0.95rem;
   color: #2c3e50;
   font-weight: 500;
+  margin-left: 2rem;
   transition: all 0.3s ease;
+}
+.content .form .form_info label::after {
+  padding: 0.2rem;
+  content: ":";
 }
 .content .form .form_info input[type=text],
 .content .form .form_info select {

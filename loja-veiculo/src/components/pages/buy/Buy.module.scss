@@ -10,7 +10,7 @@
         height: 100%;
         width: 100%;
 
-        & .search {
+        .search {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,16 +22,16 @@
             padding: 20px 50px 20px 50px;
             border-radius: .6rem;
 
-            & span {
+            span {
                 font-size: 1.6rem;
                 font-weight: bold;
             }
 
-            & .search_options {
+            .search_options {
                 display: flex;
                 width: 30%;
 
-                & input {
+                input {
                     padding: .7rem;
                     border-radius: 5px 0px 0px 5px;
                     border: 1px solid rgb(137, 137, 137);
@@ -39,7 +39,7 @@
                     outline: none;
                 }
 
-                & .search_icon {
+                .search_icon {
                     border-radius: 0px 5px 5px 0px;
                     color: white;
                     background-color: #1e6e97;

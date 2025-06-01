@@ -32,12 +32,12 @@ pool.on('error', (err) => {
     }
 })
 
-app.get('/api/dados', (res) => {
+app.get('/api/dados', (req, res) => {
     const sql = 'SELECT * FROM carros'
     pool.query(sql, (err, result) => {
         if (err) {
             console.error('Error na query:', err)
-            return res.statusCode(500).json({ error: 'Error no servidor.' })
+            return res.status(500).json({ error: 'Error no servidor.' })
         }
         res.json(result)
     })
@@ -60,7 +60,7 @@ app.post('/api/dados', (req, res) => {
 app.delete('/api/dados/:id', (req, res) => {
     const { id } = req.params
 
-    pool.query('DELETE FROM carros WHERE id = ?', [patrimonio], (err, result) => {
+    pool.query('DELETE FROM carros WHERE id = ?', [id], (err, result) => {
         if (err) {
             console.error('Error no MySQL:', err)
             return res.status(500).json({ error: 'Erro interno no servidor.' })

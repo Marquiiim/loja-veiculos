@@ -8,21 +8,21 @@
         flex-direction: column;
         gap: .7rem;
 
-        & h3 {
+        h3 {
             font-size: 1.4rem;
             font-weight: 600;
         }
 
-        & span {
+        span {
             display: flex;
             color: green;
         }
 
-        & .prices {
+        .prices {
             display: flex;
             gap: .8rem;
 
-            & .addon1 {
+            .addon1 {
                 border-radius: 1rem;
                 padding: .5rem;
                 font-size: .8rem;
@@ -30,7 +30,7 @@
                 color: white;
             }
 
-            & .addon2 {
+            .addon2 {
                 border-radius: 1rem;
                 padding: .5rem;
                 font-size: .8rem;
@@ -39,36 +39,36 @@
             }
         }
 
-        & p {
+        p {
             color: rgba(46, 46, 46, 0.695);
             font-size: .7rem;
         }
 
-        & .list_services {
+        .list_services {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             max-width: 270px;
 
-            & ul {
+            ul {
                 display: flex;
                 gap: 1rem;
 
-                & li {
+                li {
                     list-style: none;
 
-                    & h3 {
+                    h3 {
                         font-size: .9rem;
                     }
 
-                    & span {
+                    span {
                         font-size: .9rem;
                     }
                 }
             }
 
-            & button {
+            button {
                 background-color: #1e6e97;
                 color: white;
                 border: none;

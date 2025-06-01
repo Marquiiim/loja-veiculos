@@ -4,16 +4,16 @@
     align-items: center;
     flex-direction: column;
 
-    & .content {
+    .content {
         justify-content: center;
         align-items: center;
         justify-content: center;
 
-        & ul {
+        ul {
             display: flex;
             gap: 3rem;
 
-            & li {
+            li {
                 cursor: pointer;
                 list-style: none;
                 padding: 1rem;
@@ -29,7 +29,7 @@
         }
     }
 
-    & .display {
+    .display {
         margin-top: 3rem;
     }
 }

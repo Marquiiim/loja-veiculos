@@ -1,56 +1,147 @@
 .container {
   background-color: #f3fafe;
   width: 21.5rem;
-  padding: 0px 0px 15px 0px;
-  border-radius: 10px;
+  padding-bottom: 1.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 .container .content {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  text-align: center;
-  gap: 1rem;
+  align-items: center;
+  padding: 1.25rem 1.25rem 0;
+  gap: 1.25rem;
 }
 .container .content img {
   width: 100%;
-  height: 50%;
-  border-radius: 10px 10px 0px 0px;
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0;
 }
 .container .content .title {
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0.5rem 0 0;
+  color: #2d3748;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
 }
 .container .content .title span {
-  font-weight: 900;
+  font-weight: 800;
+  color: #00a8ff;
 }
-.container .content p {
-  font-weight: 600;
+.container .content .title::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(0, 255, 0, 0.6196078431), transparent);
+  margin: 0.5rem auto 0;
 }
 .container .content .info_primary {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
 }
-.container .content .info_primary span {
-  color: rgb(137, 137, 137);
+.container .content .info_primary div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .content .info_primary div strong {
+  color: #2d3748;
+  font-size: 1.1rem;
+}
+.container .content .info_primary div span {
+  color: #718096;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
 }
 .container .content button {
-  background-color: transparent;
-  border: 1px solid rgba(0, 255, 0, 0.621);
-  color: rgba(0, 255, 0, 0.621);
-  width: 80%;
-  padding: 0.5rem;
-  border-radius: 0.6rem;
-  margin-top: 2rem;
+  background: transparent;
+  border: 2px solid rgba(0, 255, 0, 0.6196078431);
+  color: rgba(0, 255, 0, 0.6196078431);
+  width: 85%;
+  padding: 0.75rem;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
   cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.container .content button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.1), transparent);
+  transition: 0.5s;
 }
 .container .content button:hover {
-  background-color: rgba(0, 255, 0, 0.621);
+  background-color: rgba(0, 255, 0, 0.6196078431);
   color: white;
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
+}
+.container .content button:hover::before {
+  left: 100%;
 }
 .container .content .info_secondary {
-  color: rgb(137, 137, 137);
-  font-size: 12px;
-  font-weight: 400;
+  color: #718096;
+  font-size: 0.8rem;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.3s ease;
+}
+.container .content .info_secondary:hover {
+  color: #00a8ff;
+}
+.container .content .info_secondary:hover svg {
+  transform: translateX(3px);
+}
+.container .content .info_secondary svg {
+  transition: transform 0.3s ease;
+}
+.container .content .more_options {
+  width: 100%;
+  margin: 1rem 0 0;
+}
+.container .content .more_options ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 1.25rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.container .content .more_options ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+.container .content .more_options ul li:hover {
+  transform: translateY(-3px);
+}
+.container .content .more_options ul li span:first-child {
+  font-size: 0.8rem;
+  color: #718096;
+  margin-bottom: 0.3rem;
+}
+.container .content .more_options ul li span:last-child {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 0.95rem;
 }/*# sourceMappingURL=Blocks.module.css.map */
