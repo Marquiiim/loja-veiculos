@@ -60,6 +60,13 @@
   font-size: 0.8rem;
   margin-top: 0.2rem;
 }
+.container .content .heart {
+  transition: color 0.3s ease;
+}
+.container .content .heart:hover {
+  color: red;
+  cursor: pointer;
+}
 .container .content button {
   background: transparent;
   border: 2px solid rgba(0, 255, 0, 0.6196078431);
@@ -67,7 +74,6 @@
   width: 85%;
   padding: 0.75rem;
   border-radius: 0.8rem;
-  margin-top: 1rem;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;

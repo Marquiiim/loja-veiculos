@@ -19,7 +19,6 @@ function Blocks({ ano, modelo, quilometragem, combustivel, motor, cambio, estado
     return (
         <div className={styles.container}>
             <div className={styles.content}>
-                <SlHeart />
                 <img src='sem nome' alt='' />
                 <h3 className={styles.title}>
                     {modelo}
@@ -32,6 +31,7 @@ function Blocks({ ano, modelo, quilometragem, combustivel, motor, cambio, estado
                         <IoIosSpeedometer /> <span>{quilometragem}.0 km</span>
                     </span>
                 </div>
+                <SlHeart className={styles.heart}/>
                 <button>
                     Comprar
                 </button>

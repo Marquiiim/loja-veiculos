@@ -1,75 +1,98 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
 
     .content {
+        max-width: 1200px;
+        margin: 0 auto;
         display: flex;
+        align-items: center;
+        gap: 3rem;
 
         .left_sell {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            max-width: 600px;
+            flex: 1;
 
             h1 {
-                font-size: 3rem;
-                font-weight: 700;
+                font-size: 2.5rem;
+                color: #2c3e50;
+                margin-bottom: 1.5rem;
+                line-height: 1.3;
 
                 span {
-                    color: #1e6e97;
+                    color: #e74c3c;
                 }
             }
 
             p {
-                color: rgba(46, 46, 46, 0.695);
+                font-size: 1.1rem;
+                color: #7f8c8d;
+                margin-bottom: 2rem;
+                max-width: 500px;
             }
 
             a {
-                background-color: #1e6e97;
-                font-weight: 500;
-                text-decoration: none;
-                text-align: center;
+                display: inline-block;
+                background-color: #e74c3c;
                 color: white;
-                border: none;
-                cursor: pointer;
-                padding: .8rem;
-                border-radius: .5rem;
-                width: 50%;
+                padding: 0.8rem 1.5rem;
+                border-radius: 6px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: background-color 0.3s ease;
+                margin-bottom: 1.5rem;
 
                 &:hover {
-                    opacity: 0.9;
-                }
-
-                &:active {
-                    opacity: 0.8;
+                    background-color: #c0392b;
                 }
             }
 
             div {
                 display: flex;
-                gap: .4rem;
+                align-items: center;
+                gap: 0.8rem;
 
                 .checkbox {
-                    border-radius: 3px;
-                    border: 1px solid rgba(46, 46, 46, 0.695);
-                    width: 0.9375rem;
-                    height: 0.9375rem;
-                    margin-top: .2rem;
+                    width: 20px;
+                    height: 20px;
+                    border: 2px solid #bdc3c7;
+                    border-radius: 4px;
                     cursor: pointer;
-                    transition: background-color 0.2s ease-in-out;
+                    transition: all 0.2s ease;
+
+                    &.checked {
+                        background-color: #e74c3c;
+                        border-color: #e74c3c;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 6px;
+                            top: 2px;
+                            width: 5px;
+                            height: 10px;
+                            border: solid white;
+                            border-width: 0 2px 2px 0;
+                            transform: rotate(45deg);
+                        }
+                    }
                 }
 
-                .checked {
-                    background-color: #1e6e97;
+                span {
+                    font-size: 0.9rem;
+                    color: #7f8c8d;
                 }
             }
+        }
 
-            span {
-                color: rgb(0, 0, 0);
+        .right_sell {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                max-width: 100%;
+                height: auto;
             }
         }
     }

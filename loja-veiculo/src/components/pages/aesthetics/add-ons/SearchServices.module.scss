@@ -1,35 +1,76 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
 
     .content {
-        justify-content: center;
-        align-items: center;
-        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto 2rem;
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 1rem;
 
         ul {
             display: flex;
-            gap: 3rem;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            flex-wrap: wrap;
 
             li {
+                padding: 0.8rem 1.5rem;
+                background-color: white;
+                border-radius: 30px;
                 cursor: pointer;
-                list-style: none;
-                padding: 1rem;
-                border: 1px solid #1e6e97;
-                color: #1e6e97;
-                border-radius: .5rem;
-                transition: transform 0.3s ease-in-out;
+                font-weight: 600;
+                color: #7f8c8d;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+                border: 1px solid #dfe6e9;
 
                 &:hover {
-                    transform: scale(1.1);
+                    color: #2c3e50;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+
+                &.active {
+                    background-color: #e74c3c;
+                    color: white;
+                    border-color: #e74c3c;
                 }
             }
         }
     }
 
     .display {
-        margin-top: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem 0.5rem;
+
+        .content {
+            ul {
+                gap: 1rem;
+
+                li {
+                    padding: 0.6rem 1.2rem;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .display {
+            grid-template-columns: 1fr;
+            padding: 0 0.5rem;
+        }
     }
 }

@@ -1,76 +1,130 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem 1rem;
+    background-color: #f5f7fa;
+    min-height: 100vh;
 
     .content {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-        .search {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 99%;
-            height: 100%;
-            gap: .8rem;
-            background-color: #ffffff;
-            padding: 20px 50px 20px 50px;
-            border-radius: .6rem;
+    .search {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        text-align: center;
 
-            span {
-                font-size: 1.6rem;
-                font-weight: bold;
-            }
+        span {
+            display: block;
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
 
-            .search_options {
-                display: flex;
-                width: 30%;
+        &_options {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
 
-                input {
-                    padding: .7rem;
-                    border-radius: 5px 0px 0px 5px;
-                    border: 1px solid rgb(137, 137, 137);
-                    width: 100%;
+            input {
+                width: 100%;
+                padding: 1rem 1.5rem;
+                padding-right: 3.5rem;
+                border: 2px solid #dfe6e9;
+                border-radius: 8px;
+                font-size: 1rem;
+                transition: all 0.3s ease;
+
+                &:focus {
                     outline: none;
+                    border-color: #3498db;
+                    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
                 }
 
-                .search_icon {
-                    border-radius: 0px 5px 5px 0px;
-                    color: white;
-                    background-color: #1e6e97;
-                    cursor: pointer;
+                &::placeholder {
+                    color: #b2bec3;
                 }
             }
         }
 
-        & .cars {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 99%;
-            height: 100%;
-            gap: .3rem;
-            background-color: #ffffff;
-            padding: 20px 50px 20px 50px;
-            border-radius: .6rem;
-            margin-top: 1rem;
+        &_icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #e74c3c;
+            cursor: pointer;
+            transition: all 0.3s ease;
 
-            & .title {
-                font-size: 2.5rem;
-                font-weight: 300;
-                margin-bottom: 1rem;
+            &:hover {
+                color: #2980b9;
+            }
+        }
+    }
+
+    .cars {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        .title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #dfe6e9;
+            font-weight: 600;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 50px;
+                height: 3px;
+                background: linear-gradient(90deg, #00ff009e, transparent);
+                margin-top: 0.5rem;
+            }
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .noResults {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: #e74c3c;
+            background-color: rgba(231, 76, 60, 0.1);
+            border-radius: 8px;
+            margin: 2rem auto;
+            max-width: 600px;
+            border-left: 4px solid #e74c3c;
+            animation: fadeIn 0.5s ease-out;
+
+            &::before {
+                content: "⚠️";
+                margin-right: 0.5rem;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
             }
 
-            & ul {
-                display: grid;
-                gap: 1rem;
-                grid-template-columns: repeat(4, 1fr);
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     }

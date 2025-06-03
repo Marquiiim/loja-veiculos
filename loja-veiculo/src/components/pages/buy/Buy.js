@@ -12,15 +12,34 @@ function Buy() {
     const [error, setError] = useState(null)
 
     const [dados, setDados] = useState([])
+    const [filteredDados, setFilteredDados] = useState([])
+    const [searchTerm, setSearchTerm] = useState('')
 
     useEffect(() => {
         axios.get('http://127.0.0.1:5000/api/dados')
-            .then((res) => setDados(res.data))
+            .then((res) => {
+                setDados(res.data)
+                setFilteredDados(res.data)
+            })
             .catch((err) => {
                 console.error(err)
                 setError(err.message)
             })
     }, [])
+
+    useEffect(() => {
+        if (searchTerm === '') {
+            setFilteredDados(dados)
+        } else {
+            const filtered = dados.filter(item => item.modelo.toLowerCase().includes(searchTerm.toLocaleLowerCase())
+            )
+            setFilteredDados(filtered)
+        }
+    })
+
+    const handleSearch = (e) => {
+        setSearchTerm(e.target.value)
+    }
 
     return (
         <section className={styles.container}>
@@ -30,16 +49,19 @@ function Buy() {
                         Qual veículo você está buscando?
                     </span>
                     <div className={styles.search_options}>
-                        <input type='text' placeholder='Digite o modelo do veículo' />
+                        <input type='text' placeholder='Digite o modelo do veículo'
+                            value={searchTerm}
+                            onChange={handleSearch}
+                        />
                         <IoIosSearch size='41' className={styles.search_icon} />
                     </div>
                 </div>
                 <div className={styles.cars}>
                     <div className={styles.title}>
-                        Últimas novidades
+                        {searchTerm ? `Resultados de ${searchTerm}` : 'Últimas novidades'}
                     </div>
                     <ul>
-                        {dados.map((data) => (
+                        {filteredDados.map((data) => (
                             <li key={data.chassi}>
                                 <Blocks
                                     ano={data.ano}
@@ -54,8 +76,10 @@ function Buy() {
                                 />
                             </li>
                         ))}
-
                     </ul>
+                    {searchTerm && filteredDados.length === 0 && (
+                        <p className={styles.noResults}>Nenhum veículo do modelo "{searchTerm}" encontrado.</p>
+                    )}
                 </div>
             </div>
         </section>

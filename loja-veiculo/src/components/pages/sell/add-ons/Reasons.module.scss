@@ -1,65 +1,54 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    width: 100%;
-    margin-top: 1.5rem;
-    background-color: white;
+    padding: 4rem 2rem;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 1rem;
+    margin: 2rem;
 
-    & .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 1.5rem;
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
 
-        & ul {
-            display: flex;
-            gap: 2.5rem;
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0;
+            margin: 0;
+            list-style: none;
 
-            & li {
-                display: flex;
-                text-align: center;
-                justify-content: center;
-                flex-direction: column;
-                background-color: #f3fafe;
-                border-radius: .4rem;
+            li {
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 12px;
                 padding: 2rem;
-                gap: 1rem;
-                max-width: 270px;
+                transition: transform 0.3s ease, background-color 0.3s ease;
+                text-align: center;
 
-                & h3 {
+                &:hover {
+                    transform: translateY(-5px);
+                    background-color: rgba(255, 255, 255, 0.15);
+                }
+
+                h3 {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
                     flex-direction: column;
-                    gap: 1.5rem;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    color: white;
+
+                    svg {
+                        color: #e74c3c;
+                    }
                 }
 
-                & span {
-                    font-size: 14.5px;
-                    color: rgba(46, 46, 46, 0.695);
+                span {
+                    display: block;
+                    font-size: 1rem;
+                    color: #bdc3c7;
+                    line-height: 1.5;
                 }
-            }
-
-        }
-
-        & button {
-            background-color: #1e6e97;
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: .8rem;
-            border-radius: .5rem;
-            width: 50%;
-
-            &:hover {
-                opacity: 0.9;
-            }
-
-            &:active {
-                opacity: 0.8;
             }
         }
     }

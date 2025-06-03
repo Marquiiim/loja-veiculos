@@ -1,51 +1,44 @@
 .container {
-
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  
     .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-
-        .logo_bottom {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-top: 1.7rem;
-            padding: 1.7rem;
-            gap: .6rem;
-            width: 100%;
-            background-color: rgb(21, 21, 21);
-
-            .logo {
-                font-family: "Lexend", serif;
-                font-weight: 900;
-                text-decoration: none;
-                color: #1e6e97;
-            }
-
-            .logo_others {
-                display: flex;
-                flex-direction: column;
-                
-                span {
-                    color: white;
-                    padding: 0px 0px 4px 7px;
-                    border-left: 2px solid white;
-                    font-weight: 400;
-                }
-
-            }
-        }
-        
-        .copyright {
-            color: white;
-            text-align: center;
-            background-color: #1e6e97;
-            padding: 1.3rem;
-            font-size: .8rem;
-            width: 100%;
-        }
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
     }
-}
+  
+    .logo_bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+      }
+  
+      .logo_others {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+        color: #bdc3c7;
+      }
+    }
+  
+    .copyright {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #bdc3c7;
+      padding-top: 1rem;
+    }
+  }
