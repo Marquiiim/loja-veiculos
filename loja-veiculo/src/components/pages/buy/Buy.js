@@ -30,7 +30,7 @@ function Buy() {
                         Qual veículo você está buscando?
                     </span>
                     <div className={styles.search_options}>
-                        <input type='text' placeholder='Marca ou modelo' />
+                        <input type='text' placeholder='Digite o modelo do veículo' />
                         <IoIosSearch size='41' className={styles.search_icon} />
                     </div>
                 </div>

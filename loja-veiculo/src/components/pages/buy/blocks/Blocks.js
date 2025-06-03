@@ -5,6 +5,7 @@ import styles from './Blocks.module.css'
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { IoIosCalendar } from "react-icons/io";
 import { IoIosSpeedometer } from "react-icons/io";
+import { SlHeart } from "react-icons/sl";
 
 function Blocks({ ano, modelo, quilometragem, combustivel, motor, cambio, estado, proprietario, telefone }) {
 
@@ -18,6 +19,7 @@ function Blocks({ ano, modelo, quilometragem, combustivel, motor, cambio, estado
     return (
         <div className={styles.container}>
             <div className={styles.content}>
+                <SlHeart />
                 <img src='sem nome' alt='' />
                 <h3 className={styles.title}>
                     {modelo}
@@ -33,6 +35,7 @@ function Blocks({ ano, modelo, quilometragem, combustivel, motor, cambio, estado
                 <button>
                     Comprar
                 </button>
+                
 
                 <span className={styles.info_secondary} onClick={toogleMore}>
                     {more ? (
