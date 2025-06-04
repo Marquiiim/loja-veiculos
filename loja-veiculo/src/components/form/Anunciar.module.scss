@@ -40,90 +40,68 @@
             }
         }
 
-        .form_info {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-bottom: 1.5rem;
-            position: relative;
+        label {
+            margin-top: .8rem;
+        }
 
-            label {
-                display: flex;
-                align-items: center;
-                font-size: 0.95rem;
-                color: #2c3e50;
-                font-weight: 500;
-                margin-left: 2rem;
-                transition: all 0.3s ease;
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: #34495e;
+            transition: all 0.3s ease;
+            background-color: #f9f9f9;
 
-                &::after {
-                    padding: .2rem;
-                    content: ':';
-                }
+            &:focus {
+                border-color: #3498db;
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+                background-color: #fff;
             }
 
-            input[type="text"],
-            select {
-                width: 100%;
-                padding: 12px 16px;
-                border: 2px solid #e0e0e0;
-                border-radius: 8px;
-                font-size: 1rem;
-                color: #34495e;
-                transition: all 0.3s ease;
-                background-color: #f9f9f9;
-
-                &:focus {
-                    border-color: #3498db;
-                    outline: none;
-                    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
-                    background-color: #fff;
-
-                    label {
-                        color: #3498db;
-                    }
-                }
-
-                &::placeholder {
-                    color: #95a5a6;
-                }
-            }
-
-            select {
-                appearance: none;
-                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-                background-repeat: no-repeat;
-                background-position: right 1rem center;
-                background-size: 1em;
-            }
-
-            input {
-                margin-top: 0.3rem;
+            &::placeholder {
+                color: #95a5a6;
             }
         }
 
-        button[type="submit"] {
-            background-color: #e74c3c;
-            color: white;
-            border: none;
-            padding: 14px 24px;
-            font-size: 1.1rem;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+        }
 
-            &:hover {
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-                opacity: 0.9;
-            }
+        input {
+            margin-top: 0.3rem;
+        }
+    }
 
-            &:active {
-                opacity: 0.8;
-            }
+    button[type="submit"] {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        padding: 14px 24px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-top: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            opacity: 0.9;
+        }
+
+        &:active {
+            opacity: 0.8;
         }
     }
 }

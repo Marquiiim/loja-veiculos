@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import styles from './Anunciar.module.css'
 
@@ -64,134 +65,117 @@ function Anunciar() {
                 Cadastre seu carro
             </h1>
 
-            {duplicateError && (<span className={styles.error_duplicate}>Veículo já cadastrado!</span>)}
+            {duplicateError && (<div class="alert alert-warning" role="alert">
+                Veículo já cadastrado!
+            </div>)}
 
-            <form className={styles.form} onSubmit={(e) => {
+            <form className={styles.form} class="row g-3" onSubmit={((e) => {
                 e.preventDefault()
                 sendData()
-            }}>
-                <fieldset>
+            })} >
+                <fieldset class="row">
                     <legend>
                         Informações do Veículo
                     </legend>
 
-                    <div className={styles.form_info}>
-                        <label>
-                            Número do chassi
-                        </label>
+                    <div class="col-md-12">
+                        <label class="form-label">Número do chassi:</label>
                         <input
                             type="text"
+                            class="form-control"
                             placeholder="EX: 9BWZZZ377VT004251"
                             value={chassi}
                             onChange={(e) => setChassi(e.target.value)}
                             required
                         />
                     </div>
-
-                    <div className={styles.form_info}>
-                        <label>
-                            Ano do veículo
-                        </label>
+                    <div class="col-md-6">
+                        <label class="form-label">Ano do veículo:</label>
                         <input
                             type="text"
+                            class="form-control"
                             placeholder="EX: 2026 / 2027"
                             value={ano}
                             onChange={(e) => setAno(e.target.value)}
                             required
                         />
                     </div>
-
-                    <div className={styles.form_info}>
-                        <label>
-                            Modelo do veículo
-                        </label>
+                    <div class="col-6">
+                        <label class="form-label">Modelo do veículo:</label>
                         <input
                             type="text"
+                            class="form-control"
                             placeholder="EX: FIAT ARGO"
                             value={modelo}
                             onChange={(e) => setModelo(e.target.value)}
                             required
                         />
                     </div>
-
-                    <div className={styles.form_info}>
-                        <label>
-                            Quilometragem
-                        </label>
+                    <div class="col-6">
+                        <label class="form-label">Quilometragem:</label>
                         <input
                             type="text"
+                            class="form-control"
                             placeholder="EX: 1000.0"
                             value={quilometragem}
                             onChange={(e) => setQuilometragem(e.target.value)}
                             required
                         />
                     </div>
-
-                    <div className={styles.form_info}>
-                        <label>
-                            Tipo de combustível
-                        </label>
+                    <div class="col-md-6">
+                        <label class="form-label">Tipo de combustivel:</label>
                         <input
                             type="text"
+                            class="form-control"
                             placeholder="EX: Álcool, Elétrico, Gasolina Comum / Aditivada"
                             value={combustivel}
                             onChange={(e) => setCombustivel(e.target.value)}
                             required
                         />
                     </div>
-
-                    <div className={styles.form_info}>
-                        <label>
-                            Potência do motor
-                        </label>
+                    <div class="col-md-6">
+                        <label class="form-label">Potência do motor:</label>
                         <input
                             type="text"
+                            class="form-control"
                             placeholder="EX: 1.0 / 1.6"
                             value={motor}
                             onChange={(e) => setMotor(e.target.value)}
                             required
                         />
                     </div>
-
-                    <div className={styles.form_info}>
-                        <label>
-                            Tipo de câmbio
-                        </label>
+                    <div class="col-md-6">
+                        <label class="form-label">Tipo de câmbio:</label>
                         <input
                             type="text"
+                            class="form-control"
                             placeholder="EX: Automático / Manual"
                             value={cambio}
                             onChange={(e) => setCambio(e.target.value)}
                             required
                         />
                     </div>
-
-                    <div className={styles.form_info}>
-                        <label>
-                            Estado do veículo
-                        </label>
+                    <div class="col-md-6">
+                        <label class="form-label">Estado do veículo:</label>
                         <select
+                            class="form-select"
                             value={estado}
                             onChange={(e) => setEstado(e.target.value)}
                             required
                         >
-
-                            <option value=''>Selecione uma opção</option>
-                            <option value='Usado'>Usado</option>
+                            <option selected>Selecione uma opção</option>
                             <option value='Novo'>Novo</option>
+                            <option value='Usado'>Usado</option>
                         </select>
                     </div>
-
                     <legend>
                         Informações do Proprietário
                     </legend>
-
-                    <div className={styles.form_info}>
-                        <label>
-                            Nome proprietário
-                        </label>
+                    <div class="col-md-">
+                        <label class="form-label">Nome do proprietário:</label>
                         <input
                             type="text"
+                            class="form-control"
                             placeholder="Digite seu nome Completo"
                             value={proprietario}
                             onChange={(e) => setProprietario(e.target.value)}
@@ -199,12 +183,11 @@ function Anunciar() {
                         />
                     </div>
 
-                    <div className={styles.form_info}>
-                        <label>
-                            Número do proprietário
-                        </label>
+                    <div class="col-md-4">
+                        <label class="form-label">Número do proprietário:</label>
                         <input
                             type="text"
+                            class="form-control"
                             placeholder="EX: (XX) XXXXX-XXXX"
                             value={telefone}
                             onChange={(e) => setTelefone(e.target.value)}
@@ -213,8 +196,18 @@ function Anunciar() {
                     </div>
 
                 </fieldset>
-                <button type="submit">
-                    {isLoading ? 'Anunciando...' : 'Anunciar'}
+                <button class="btn btn-primary" type="submit">
+                    {isLoading ? (
+                        <div>
+                            <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                            <span role="status">Anunciando...</span>
+                        </div>
+                    )
+                        :
+                        (
+                            <span role="status">Anunciar</span>
+                        )
+                    }
                 </button>
             </form>
         </section>
