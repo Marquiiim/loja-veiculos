@@ -36,11 +36,11 @@
 .content .form fieldset legend:first-of-type {
   margin-top: 0;
 }
-.content .form label {
-  margin-top: 0.8rem;
+.content label {
+  margin-top: 1rem;
 }
-.content .form input[type=text],
-.content .form select {
+.content input[type=text],
+.content select {
   width: 100%;
   padding: 12px 16px;
   border: 2px solid #e0e0e0;
@@ -50,21 +50,21 @@
   transition: all 0.3s ease;
   background-color: #f9f9f9;
 }
-.content .form input[type=text]:focus,
-.content .form select:focus {
+.content input[type=text]:focus,
+.content select:focus {
   border-color: #3498db;
   outline: none;
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
   background-color: #fff;
 }
-.content .form input[type=text]::-moz-placeholder, .content .form select::-moz-placeholder {
+.content input[type=text]::-moz-placeholder, .content select::-moz-placeholder {
   color: #95a5a6;
 }
-.content .form input[type=text]::placeholder,
-.content .form select::placeholder {
+.content input[type=text]::placeholder,
+.content select::placeholder {
   color: #95a5a6;
 }
-.content .form select {
+.content select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -72,9 +72,6 @@
   background-repeat: no-repeat;
   background-position: right 1rem center;
   background-size: 1em;
-}
-.content .form input {
-  margin-top: 0.3rem;
 }
 .content button[type=submit] {
   background-color: #e74c3c;
