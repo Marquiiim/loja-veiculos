@@ -62,8 +62,9 @@ function Buy() {
                     </div>
                     <ul>
                         {filteredDados.map((data) => (
-                            <li key={data.chassi}>
+                            <li key={data.id}>
                                 <Blocks
+                                    chassi={data.chassi}
                                     ano={data.ano}
                                     modelo={data.modelo}
                                     quilometragem={data.quilometragem}
