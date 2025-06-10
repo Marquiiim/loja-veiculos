@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/loja-veiculos/static/css/main.18f99053.css",
-    "main.js": "/loja-veiculos/static/js/main.9f116f75.js",
+    "main.js": "/loja-veiculos/static/js/main.3ebce1ca.js",
     "static/media/FrenteLoja.png": "/loja-veiculos/static/media/FrenteLoja.04b579a100e7696dd3a7.png",
     "static/media/CarroPNG1.png": "/loja-veiculos/static/media/CarroPNG1.6591bea30fdb440572f1.png",
     "static/media/CarroPNG2.png": "/loja-veiculos/static/media/CarroPNG2.606830e04fd899c0a8d5.png",
@@ -11,10 +11,10 @@
     "static/media/CarRightHome.jpg": "/loja-veiculos/static/media/CarRightHome.bff59617dafb8f4bd030.jpg",
     "index.html": "/loja-veiculos/index.html",
     "main.18f99053.css.map": "/loja-veiculos/static/css/main.18f99053.css.map",
-    "main.9f116f75.js.map": "/loja-veiculos/static/js/main.9f116f75.js.map"
+    "main.3ebce1ca.js.map": "/loja-veiculos/static/js/main.3ebce1ca.js.map"
   },
   "entrypoints": [
     "static/css/main.18f99053.css",
-    "static/js/main.9f116f75.js"
+    "static/js/main.3ebce1ca.js"
   ]
 }
