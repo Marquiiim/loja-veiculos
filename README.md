@@ -1,34 +1,65 @@
-# 🚗 Projeto de Gerenciamento de Vendas e Compras de Veículos
+## 🚗 Projeto AutoManager – Sistema de Gestão de Veículos e Transações
 
-Este projeto foi desenvolvido com o objetivo de aprimorar minhas habilidades em **desenvolvimento web fullstack**, integrando um backend robusto com uma interface frontend dinâmica e responsiva.
+### 🧾 Descrição
 
-## 🛠️ Tecnologias Utilizadas
+O **AutoManager** é um sistema web completo desenvolvido com foco na **gestão de veículos e operações comerciais** (compra e venda). O projeto foi criado com o objetivo de **aprimorar habilidades fullstack**, unindo integração entre frontend e backend com uma arquitetura modular, segura e responsiva.
 
-### 🔧 Backend
+### 🧩 Funcionalidades
 
-* **Node.js** – Ambiente de execução JavaScript no servidor
-* **Express.js** – Framework web para criação da API REST
-* **MySQL** – Banco de dados relacional para persistência de dados
+#### 🔧 Backend (API REST)
 
-### 🎨 Frontend
+* Criação de uma **API RESTful** com **Node.js** e **Express**
+* Operações **CRUD** para:
 
-* **HTML5 & CSS3** – Estrutura e estilo da aplicação
-* **Sass** – Pré-processador CSS para modularização e reutilização de estilos
-* **JavaScript** – Lógica de interação e manipulação dinâmica do DOM
-* **Axios** – Cliente HTTP para consumo da API REST
+  * Veículos
+  * Transações (compras e vendas)
+* Endpoints para:
+
+  * Consulta de estoque
+  * Registro de novas transações
+
+#### 💻 Frontend
+
+**Catálogo de Veículos:**
+
+* Visualização completa do estoque disponível
+* **Filtros dinâmicos** por modelo, ano e faixa de preço
+* Página de detalhes com imagens e especificações completas de cada veículo
+
+**Painel de Transações:**
+
+* Formulários com **validação em tempo real** para cadastro de vendas e compras
+* Histórico de operações com **status atualizado** de cada transação
+
+### 🛠️ Tecnologias Utilizadas
+
+**Backend:**
+
+* Node.js
+* Express.js
+* MySQL
+* XAMPP (ambiente local)
+
+**Frontend:**
+
+* JavaScript
+* Axios
+* HTML5
+* CSS3 + Sass
+* Bootstrap
+
+**Arquitetura:**
+
+* API REST
+* Componentes dinâmicos e reutilizáveis
+
+### 🚀 Diferenciais do Projeto
+
+* 🔄 Comunicação em tempo real entre frontend e backend via **Axios**
+* 🗄️ Banco de dados **relacional seguro** para controle de veículos e transações
+* 📱 Interface **responsiva com Bootstrap**, adaptável a todos os dispositivos
+* ⚙️ Estrutura modular, permitindo fácil expansão e manutenção
 
 ---
 
-## ⚙️ Funcionalidades
-
-* **API RESTful** com rotas `GET` e `POST` para manipulação de dados relacionados às **vendas e compras de veículos**.
-* **Integração com MySQL** para armazenamento e consulta de informações persistentes.
-* **Formulários dinâmicos** para cadastro de vendas, com envio de dados diretamente ao backend.
-* **Listagens em tempo real** de veículos disponíveis, com dados consumidos da API via Axios.
-* **Interface responsiva e fluida**, com foco na experiência do usuário, desenvolvida com boas práticas de estruturação visual e organização de componentes.
-
----
-
-## 🚀 Objetivo
-
-Este projeto visa consolidar conhecimentos essenciais em tecnologias fullstack modernas, com foco na criação de aplicações completas, escaláveis e com boas práticas de arquitetura web.
+Este projeto demonstra minha capacidade de **criar soluções completas para o setor automotivo**, com foco em usabilidade, integração de dados e escalabilidade.
